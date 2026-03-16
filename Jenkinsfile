@@ -20,7 +20,7 @@ node {
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                        sh "git push https://Anurag000-rgb:${GIT_PASSWORD}@github.com/Anurag000-rgb/GitOps-EKS.git HEAD:main"
+                        sh "git push -f https://Anurag000-rgb:${GIT_PASSWORD}@github.com/Anurag000-rgb/GitOps-EKS.git HEAD:main"
       }
     }
   }
